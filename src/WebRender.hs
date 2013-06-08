@@ -93,7 +93,7 @@ main = withSocketsDo $ do
               -- Tell the client about the request.
               Just reqUri -> hPutStrLn sock $ "Request: " ++ show reqUri
 
-              -- I don't even know what it means to request a resource with a URI.
+              -- I don't even know what it means to request a resource without a URI or WebResource.
               _ -> return ()
           _ -> return ()
 
