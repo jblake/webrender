@@ -1,0 +1,22 @@
+author: Julian Blake Kongslie
+build-type: Simple
+cabal-version: >=1.8
+license-file: LICENSE
+license: MIT
+maintainer: jblake@omgwallhack.org
+name: webrender
+version: 0.1
+
+executable webrender
+  build-depends:
+    base,
+    bytestring,
+    glib,
+    gtk,
+    mtl,
+    network,
+    system-time-monotonic,
+    temporary,
+    webkit
+  hs-source-dirs: src
+  main-is: WebRender.hs
